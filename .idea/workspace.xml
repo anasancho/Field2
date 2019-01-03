@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a2d05d7-aa4e-4580-ba8e-637521cbbae9" name="Default" comment="new executors for sound">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/GRAAL.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/f_bow_polyglot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/asm-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/asm-analysis-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/asm-commons-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/asm-tree-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/asm-util-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/chromeinspector-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/icu4j-62.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/js-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/js-launcher-1.0.0-rc9-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/js-launcher-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/js-scriptengine-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/launcher-common-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/profiler-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/regex-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/field/utility/AsMapShim.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/C3DViewer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/C3DViewer__2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/field_prebuild.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gumtree.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gumtree__2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/j3dcore.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jMusic1_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jarsDir.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javaosc_core_0_4_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jbox2d_library_2_3_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jmustache_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsyphon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl_assimp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl_openvr.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl_par.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl_tinyfd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openvr.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/quickhull3d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/webcam_capture_0_3_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/src/fieldagent/Trampoline.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/src/fieldagent/Trampoline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_bow_linker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build_bow_linker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f_bow" beforeDir="false" afterPath="$PROJECT_DIR$/f_bow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/build/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/build/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/examples/shaders.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/examples/shaders.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.Examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.Examples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.File.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.File.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Menubar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Geometry.BoxGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Geometry.BoxGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Material.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Material.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Sidebar.Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Viewport.Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Viewport.Info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/Viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/libs/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/editor/js/libs/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_decoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_decoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_decoder.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_decoder.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_encoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_encoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/vr/WebVR.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/js/vr/WebVR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/bvh/pirouette.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/fbx/nurbs.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/fbx/nurbs.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/AnimatedMorphSphere/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/AnimatedMorphSphere/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-Binary/BoomBox.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_baseColor.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_emissive.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_normal.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_occlusionRoughnessMetallic.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-dds/BoomBox_occlusionRoughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_occlusion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_roughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_specularGlossiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/glTF/BoomBox_occlusionRoughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BoomBox/screenshot/screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/AvatarBotA_Head_Tex_Combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/AvatarBotA_Tex_Combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/Bot_Skinned.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/buffer.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF-Binary/CesiumMan.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF-Embedded/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF/CesiumMan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/glTF/CesiumMan0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMan/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-Embedded/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck0.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck1.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck2.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck3.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/CesiumMilkTruck/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/Default_AO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/Default_albedo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/Default_emissive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/Default_metalRoughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/DamagedHelmet/glTF/Default_normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-Binary/Duck.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-Draco/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-Draco/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-Embedded/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/Duck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF/Duck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/glTF/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Duck/screenshot/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Flamingo.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Horse.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/Infinite-Level_02_Disp_NoSmoothUV-4096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/Infinite-Level_02_Tangent_SmoothUV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/LeePerrySmith_License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/Map-COL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LeePerrySmith/Map-SPEC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/LittlestTokyo.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/glTF-Embedded/MetalRoughSpheres.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_MetalRough.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/MetalRoughSpheres/screenshot/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF-Binary/Monster.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF-Draco/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF-Draco/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF-Embedded/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/glTF/Monster0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Monster/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Nefertiti/Nefertiti.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Nefertiti/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/OutlinedBox/OutlinedBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/OutlinedBox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/OutlinedBox/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Parrot.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/PrimaryIonDrive.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/SimpleSkinning.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/SittingBox.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/Stork.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/ferrari.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/ferrari_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/monster/glTF-lights/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/monster/glTF-lights/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/gltf/monster/glTF-lights/Monster0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Asian_Male.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Black_Female.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Caucasion_Female.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Caucasion_Male.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Highlighted_Muscles.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/skins/Indian_Male.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS/umich_ucs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/UCS_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/knight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/M4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/MarineCv2_color.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/m4.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/m4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_all.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_core.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_core.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_single.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_anims_single.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_ik.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/marine/marine_ik.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/simple/simple.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/models/skinned/simple/simple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/textures/piz_compressed.exr" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/textures/piz_compressed.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_loader_bvh.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_loader_bvh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_loader_gltf.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_loader_gltf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_materials_texture_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/examples/webgl_materials_texture_canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/src/cameras/OrthographicCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/src/cameras/OrthographicCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/src/cameras/PerspectiveCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/src/cameras/PerspectiveCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_android/utils/servers/nodejs_server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_android/utils/servers/nodejs_server.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/build/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/build/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/examples/shaders.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/examples/shaders.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.Examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.Examples.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.File.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.File.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Menubar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Geometry.BoxGeometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Geometry.BoxGeometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Material.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Material.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Sidebar.Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Viewport.Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Viewport.Info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/Viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/libs/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/editor/js/libs/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_decoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_decoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_decoder.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_decoder.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_encoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_encoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/vr/WebVR.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/js/vr/WebVR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/bvh/pirouette.bvh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/fbx/nurbs.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/fbx/nurbs.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/AnimatedMorphSphere/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/AnimatedMorphSphere/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-Binary/BoomBox.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_baseColor.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_emissive.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_normal.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_occlusionRoughnessMetallic.dds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-dds/BoomBox_occlusionRoughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_occlusion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_roughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF-pbrSpecularGlossiness/BoomBox_specularGlossiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox_baseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox_emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/glTF/BoomBox_occlusionRoughnessMetallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BoomBox/screenshot/screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/AvatarBotA_Head_Tex_Combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/AvatarBotA_Tex_Combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/Bot_Skinned.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/buffer.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF-Binary/CesiumMan.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF-Embedded/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF/CesiumMan.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF/CesiumMan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/glTF/CesiumMan0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMan/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-Embedded/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-MaterialsCommon/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck0.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck1.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck2.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF-techniqueWebGL/CesiumMilkTruck3.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/glTF/CesiumMilkTruck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/CesiumMilkTruck/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/Default_AO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/Default_albedo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/Default_emissive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/Default_metalRoughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/DamagedHelmet/glTF/Default_normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-Binary/Duck.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-Draco/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-Draco/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-Embedded/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/Duck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF-pbrSpecularGlossiness/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF/Duck.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF/Duck0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/glTF/DuckCM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Duck/screenshot/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Flamingo.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Horse.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/Infinite-Level_02_Disp_NoSmoothUV-4096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/Infinite-Level_02_Tangent_SmoothUV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/LeePerrySmith_License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/Map-COL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LeePerrySmith/Map-SPEC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/LittlestTokyo.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/glTF-Embedded/MetalRoughSpheres.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_MetalRough.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/MetalRoughSpheres/screenshot/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF-Binary/Monster.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF-Draco/0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF-Draco/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF-Draco/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF-Embedded/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/glTF/Monster0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Monster/screenshot/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Nefertiti/Nefertiti.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Nefertiti/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/OutlinedBox/OutlinedBox.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/OutlinedBox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/OutlinedBox/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Parrot.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/PrimaryIonDrive.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/SimpleSkinning.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/SittingBox.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/Stork.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/ferrari.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/ferrari_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/monster/glTF-lights/Monster.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/monster/glTF-lights/Monster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/models/gltf/monster/glTF-lights/Monster0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/textures/piz_compressed.exr" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/textures/piz_compressed.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_loader_bvh.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_loader_bvh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_loader_gltf.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_loader_gltf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_materials_texture_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/examples/webgl_materials_texture_canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/src/cameras/OrthographicCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/src/cameras/OrthographicCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/src/cameras/PerspectiveCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/src/cameras/PerspectiveCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/sketch1_ios/utils/servers/nodejs_server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/sketch1_ios/utils/servers/nodejs_server.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/build/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/build/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/editor/examples/shaders.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/editor/examples/shaders.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/editor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/editor/js/Sidebar.Material.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/editor/js/Sidebar.Material.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/editor/js/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/editor/js/Viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_decoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_decoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_decoder.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_decoder.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_encoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_encoder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/js/libs/draco/gltf/draco_wasm_wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/assimp/octaminator/Octaminator_lowpoly_final.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/fbx/nurbs.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/fbx/nurbs.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/screenshot/screenshot.gif" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/AnimatedMorphSphere/screenshot/screenshot.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMan/glTF-Draco/CesiumMan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/Duck.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/Duck.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/DuckCM.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Duck/glTF-Draco/DuckCM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/MetalRoughSpheres0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_MetalRough.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/glTF/Spheres_MetalRough.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/screenshot/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/MetalRoughSpheres/screenshot/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/Monster.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/Monster.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/Monster.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/Monster/glTF-Draco/Monster.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/OutlinedBox/OutlinedBox.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/models/gltf/OutlinedBox/OutlinedBox.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/textures/piz_compressed.exr" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/textures/piz_compressed.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/examples/webgl_materials_texture_canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/examples/webgl_materials_texture_canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/src/cameras/OrthographicCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/src/cameras/OrthographicCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/src/cameras/PerspectiveCamera.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/src/cameras/PerspectiveCamera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ar/three.js/utils/servers/nodejs_server.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ar/three.js/utils/servers/nodejs_server.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/web/jshint.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/web/jshint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linker/src/fieldlinker/AsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/linker/src/fieldlinker/AsMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/field/graphics/FLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/field/graphics/FLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/field/graphics/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/field/graphics/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/field/graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/field/graphics/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/field/graphics/ShaderIntrospection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/field/graphics/ShaderIntrospection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/field/utility/IdempotencyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/field/utility/IdempotencyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldbox/boxes/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldbox/boxes/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldbox/boxes/plugins/BoxDefaultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldbox/boxes/plugins/BoxDefaultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldbox/execution/Errors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldbox/execution/Errors.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fielded/Animatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fielded/Animatable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldnashorn/Nashorn.stdlib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldnashorn/Nashorn.stdlib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fieldnashorn/NashornExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fieldnashorn/NashornExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graphics.stage.VR/viewport.box" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graphics.stage.VR/viewport.box" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graphics.stage.VR/viewport.box.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graphics.stage.VR/viewport.box.js" afterDir="false" />
+    </list>
+    <list id="f1ccbda2-7d3f-499e-a7d4-fcd04a264a7b" name="a" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1130052132">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="f_bow_polyglot" value="11" />
+          <entry key="java" value="2871" />
+          <entry key="js" value="2" />
+          <entry key="kt" value="2139" />
+          <entry key="sh" value="28" />
+          <entry key="txt" value="29" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="43" />
+          <entry key="JAVA" value="85" />
+          <entry key="JavaScript" value="5" />
+          <entry key="Kotlin" value="19" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="43" />
+          <entry key="f_bow_polyglot" value="2" />
+          <entry key="java" value="85" />
+          <entry key="js" value="5" />
+          <entry key="kt" value="19" />
+          <entry key="sh" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2871" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Kotlin" value="2139" />
+          <entry key="PLAIN_TEXT" value="68" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.47784996">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/graphics/FLine.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45000">
+                  <caret line="2622" column="32" selection-start-line="2622" selection-start-column="32" selection-end-line="2622" selection-end-column="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/ar/three.js/field/runners.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1404">
+                  <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/fielded/Animatable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="702">
+                  <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/graphics/Shader.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="8244">
+                  <caret line="498" selection-start-line="498" selection-end-line="498" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/graphics/ShaderIntrospection.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="990">
+                  <caret line="76" selection-start-line="76" selection-end-line="76" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/graphics/BaseScene.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/graphics/Scene.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#19340#19341#0" expanded="true" />
+                    <element signature="e#19386#19387#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1638">
+                  <caret line="94" selection-start-line="94" selection-end-line="94" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars/kotlin-stdlib-sources.jar!/common/kotlin/util/Tuples.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/java/util/ArrayList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="7488">
+                  <caret line="458" selection-start-line="458" selection-end-line="458" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/HostRootNode.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="864">
+                  <caret line="61" selection-start-line="61" selection-end-line="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotValue.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="35946">
+                  <caret line="2444" selection-start-line="2444" selection-end-line="2444" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ToHostNodeGen.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="558">
+                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ToHostNode.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="918">
+                  <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotContextImpl.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4086">
+                  <caret line="272" selection-start-line="272" selection-end-line="272" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/fieldbox/boxes/Box.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="125">
+                  <caret line="813" column="1" selection-start-line="813" selection-start-column="1" selection-end-line="880" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#24891#24892#0" expanded="true" />
+                    <element signature="e#24945#24946#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ContextThreadLocal.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="522">
+                  <caret line="37" selection-start-line="37" selection-end-line="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotLanguage.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4446">
+                  <caret line="284" selection-start-line="284" selection-end-line="284" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/OptimizedAssumption.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2196">
+                  <caret line="140" selection-start-line="140" selection-end-line="140" />
+                  <folding>
+                    <element signature="e#4530#4531#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/FrameWithoutBoxing.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="846">
+                  <caret line="60" selection-start-line="60" selection-end-line="60" />
+                  <folding>
+                    <element signature="e#2324#2325#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&amp;</find>
+      <find>directedOutput</find>
+      <find>out</find>
+      <find>setlineoffsetfor</find>
+      <find>this::</find>
+      <find>currentline</find>
+      <find>end(</find>
+      <find>error</find>
+      <find>target</find>
+      <find>bx[</find>
+      <find>bx</find>
+      <find>url</find>
+      <find>filename</find>
+      <find>matches</find>
+      <find>directedoutput</find>
+      <find>stdlib</find>
+      <find>hasmem</find>
+      <find>asmap_se</find>
+      <find>members</find>
+      <find>upwards</find>
+      <find>lineTo</find>
+      <find>asmapshim</find>
+      <find>expected</find>
+      <find>getmember</find>
+      <find>subscop</find>
+      <find>asmap</find>
+      <find>asmap_get</find>
+      <find>uniform</find>
+      <find>lineto(</find>
+      <find>moveTo(</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/trace/random/Random.kt" />
+        <option value="$PROJECT_DIR$/src/field/linalg/Quat.java" />
+        <option value="$PROJECT_DIR$/src/field/app/RunLoop.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Window.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/FastJPEG.java" />
+        <option value="E:/Users/marc/field2/lib/web/init_remote.html" />
+        <option value="$PROJECT_DIR$/lib/web/init_remote.html" />
+        <option value="$PROJECT_DIR$/src/field/graphics/FBO.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Image.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/vr/OpenVRDrawTarget.kt" />
+        <option value="$PROJECT_DIR$/src/field/utility/SimpleVoronoi.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Uniform.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Camera.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/vr/OculusDrawTarget2.java" />
+        <option value="$PROJECT_DIR$/src/fielded/webserver/Server.java" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/plugins/UndoStack.kt" />
+        <option value="$PROJECT_DIR$/src/field/utility/MergeThreeWays.kt" />
+        <option value="$PROJECT_DIR$/src/fielded/Numbers.java" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/FrameManipulation.java" />
+        <option value="$PROJECT_DIR$/src/trace/graphics/remote/RemoteServer.kt" />
+        <option value="$PROJECT_DIR$/win/src/fieldcef/plugins/Interventions.kt" />
+        <option value="$PROJECT_DIR$/src/field/graphics/util/Saver.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/SlowJPEG.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/util/SaverFBO.java" />
+        <option value="$PROJECT_DIR$/src/fielded/webserver/NewNanoHTTPD.kt" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/plugins/Rename.java" />
+        <option value="$PROJECT_DIR$/win/src/fieldcef/browser/Browser.java" />
+        <option value="$PROJECT_DIR$/src/trace/graphics/Stage.kt" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/plugins/StatusBar.java" />
+        <option value="$PROJECT_DIR$/lib/web/jshint.js" />
+        <option value="$PROJECT_DIR$/build_bow_linker.sh" />
+        <option value="$PROJECT_DIR$/src/field/app/ThreadSync2.kt" />
+        <option value="$PROJECT_DIR$/src/fielded/RemoteEditor.java" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/plugins/BoxDefaultCode.java" />
+        <option value="$PROJECT_DIR$/agent/src/fieldagent/Trampoline.java" />
+        <option value="$PROJECT_DIR$/f_bow_polyglot" />
+        <option value="$PROJECT_DIR$/src/fieldbox/execution/Execution.java" />
+        <option value="$PROJECT_DIR$/src/fieldnashorn/Nashorn.java" />
+        <option value="$PROJECT_DIR$/src/fieldbox/execution/Errors.kt" />
+        <option value="$PROJECT_DIR$/src/fieldnashorn/NashornExecution.java" />
+        <option value="$PROJECT_DIR$/linker/src/fieldlinker/AsMap.java" />
+        <option value="$PROJECT_DIR$/src/fieldnashorn/Nashorn.stdlib.js" />
+        <option value="$PROJECT_DIR$/src/field/utility/AsMapShim.kt" />
+        <option value="$PROJECT_DIR$/src/fieldbox/boxes/Box.java" />
+        <option value="$PROJECT_DIR$/src/field/utility/IdempotencyMap.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/ShaderIntrospection.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Shader.java" />
+        <option value="$PROJECT_DIR$/src/field/graphics/Scene.java" />
+        <option value="$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt" />
+        <option value="$PROJECT_DIR$/src/field/graphics/FLine.java" />
+        <option value="$PROJECT_DIR$/src/fielded/Animatable.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_android/field/songbird/omnitone/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_android/field/songbird/resonance-audio/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_android/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_ios/field/songbird/omnitone/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_ios/field/songbird/resonance-audio/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/sketch1_ios/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/three.js/field/songbird/omnitone/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/three.js/field/songbird/resonance-audio/package.json" />
+      <path value="$PROJECT_DIR$/lib/ar/three.js/package.json" />
+      <path value="$PROJECT_DIR$/lib/web/codemirror-5.25.2/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="3856" />
+    <option name="height" value="2136" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="field2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="field2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="field2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="field2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="field2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="field2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fieldgraaljs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="shim&#9;PSI&#9;JAVA://fielded.Animatable.Shim&#10;runners&#9;FILE&#9;file://C:/Users/marc/field2/lib/ar/three.js/field/runners.js&#10;fline&#9;FILE&#9;file://C:/Users/marc/field2/src/field/graphics/FLine.java&#10;scene&#9;FILE&#9;file://C:/Users/marc/field2/src/field/graphics/Scene.java&#10;box&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldbox/boxes/Box.java&#10;shader&#9;PSI&#9;JAVA://field.graphics.Shader&#10;idempo&#9;FILE&#9;file://C:/Users/marc/field2/src/field/utility/IdempotencyMap.java&#10;dict&#9;PSI&#9;JAVA://field.utility.Dict&#10;methodlook&#9;PSI&#9;JAVA://com.sun.tools.javac.comp.Resolve.MethodReferenceLookupHelper&#10;asta&#9;null&#9;null&#10;proxyob&#9;FILE&#9;jar://C:/Users/marc/field2/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/proxy/ProxyObject.class&#10;truffleobjec&#9;PSI&#9;JAVA://com.oracle.truffle.api.interop.TruffleObject&#10;proxyobj&#9;PSI&#9;JAVA://org.graalvm.polyglot.proxy.ProxyObject&#10;nasho&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldnashorn/Nashorn.stdlib.js&#10;nash&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldnashorn/NashornExecution.java&#10;nashorn&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldnashorn/Nashorn.java&#10;error&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldbox/execution/Errors.kt&#10;tryreport&#9;null&#9;null&#10;reporterro&#9;null&#9;null&#10;errorhand&#9;PSI&#9;JAVA://field.graphics.Shader.iErrorHandler&#10;animat&#9;FILE&#9;file://C:/Users/marc/field2/src/fielded/Animatable.java&#10;nashornex&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldnashorn/NashornExecution.java&#10;remoteser&#9;FILE&#9;file://C:/Users/marc/field2/src/trace/graphics/remote/RemoteServerExecution.kt&#10;fieldbo&#9;PSI&#9;JAVA://fieldbox.FieldBox&#10;trampol&#9;PSI&#9;JAVA://fieldagent.Trampoline&#10;linker&#9;PSI&#9;JAVA://fieldlinker.Linker&#10;boxco&#9;PSI&#9;JAVA://fieldbox.boxes.plugins.BoxDefaultCode&#10;flinedr&#9;PSI&#9;JAVA://fieldbox.boxes.FLineDrawing&#10;remoteed&#9;PSI&#9;JAVA://fielded.RemoteEditor&#10;animationelement&#9;PSI&#9;JAVA://fielded.Animatable.AnimationElement&#10;animatione&#9;PSI&#9;JAVA://fielded.Animatable.AnimationElement&#10;boxes&#9;PSI&#9;JAVA://fieldbox.boxes.Boxes&#10;threadsync2&#9;null&#9;null&#10;nashornexe&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldnashorn/NashornExecution.java&#10;jshint&#9;FILE&#9;file://C:/Users/marc/field2/lib/web/jshint.js&#10;stdlib&#9;PSI&#9;JAVA://fieldnashorn.Nashorn#_stdlib&#10;nashorn.stdlib&#9;PSI&#9;JAVA://org.lwjgl.system.MemoryManage.StdlibAllocator&#10;linerange&#9;null&#9;null&#10;statusbar&#9;FILE&#9;file://C:/Users/marc/field2/src/fieldbox/boxes/plugins/StatusBar.java&#10;stage&#9;null&#9;null&#10;browser&#9;PSI&#9;JAVA://fieldcef.browser.Browser&#10;rename to&#9;PSI&#9;JAVA://fieldbox.boxes.plugins.Rename&#10;statusb&#9;PSI&#9;JAVA://fieldbox.boxes.plugins.StatusBar&#10;saverf&#9;PSI&#9;JAVA://field.graphics.util.SaverFBO&#10;saver&#9;FILE&#9;file://C:/Users/marc/field2/src/field/graphics/util/Saver.java&#10;slowj&#9;FILE&#9;file://C:/Users/marc/field2/src/field/graphics/SlowJPEG.java&#10;runlo&#9;FILE&#9;file://C:/Users/marc/field2/src/field/app/RunLoop.java&#10;notes&#9;PSI&#9;JAVA://com.sun.tools.javac.resources.CompilerProperties.Notes&#10;run&#9;FILE&#9;file://C:/Users/marc/field2/src/field/app/RunLoop.java&#10;STATUS&#9;PSI&#9;JAVA://fieldbox.boxes.plugins.StatusBar" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AUW" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20344828" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marc\field2" />
+      <recent name="C:\Users\marc\field2\lib\web" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="3856" height="2136" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20389885" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49973658" visible="true" weight="0.12137862" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4947313" weight="0.2792208" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32973504" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49762908" weight="0.3946054" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32951587" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5052687" side_tool="true" weight="0.4039039" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.49051633" visible="true" weight="0.27972028" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.32917082" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25131717" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39990187" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32973504" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32973504" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="remote layer works on windows" />
+    <MESSAGE value=".sides variable in Stages ShaderGroup; coordinate system tweaks to camera for webvr" />
+    <MESSAGE value="towards first webvr build" />
+    <MESSAGE value="tweaks to Stage / VR" />
+    <MESSAGE value="prior to merge" />
+    <MESSAGE value="songbird based spatial audio" />
+    <MESSAGE value="Startup" />
+    <MESSAGE value="remove debug output" />
+    <MESSAGE value="add hands" />
+    <MESSAGE value="add normals to ply reader" />
+    <MESSAGE value="better camera interface" />
+    <MESSAGE value="hands for oculus" />
+    <MESSAGE value="add disable option to time slider" />
+    <MESSAGE value="add interpolate to camera state" />
+    <MESSAGE value="better toString for Camera.State" />
+    <MESSAGE value="remember / overwrite for SimpleCamera" />
+    <MESSAGE value="new executors for sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="new executors for sound" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/trace/graphics/remote/RemoteServer.kt</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/trace/graphics/PlyReaderToMesh.kt</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/field/graphics/vr/FakeOculusDrawTarget.kt</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fieldbox/io/IO.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fieldbox/io/IO.java</url>
+          <line>438</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fieldnashorn/NashornExecution.java</url>
+          <line>447</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fieldnashorn/NashornExecution.java</url>
+          <line>461</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/TypeLiteral.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/impl/AbstractPolyglotImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="78" column="70" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/interop/TruffleObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/interop/Write.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/interop/impl/ReadOnlyArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/interop/Invoke.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/interop/ForeignAccess.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5778">
+          <caret line="339" selection-start-line="339" selection-end-line="339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/proxy/ProxyNativeObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="327" column="24" lean-forward="true" selection-start-line="327" selection-start-column="24" selection-end-line="327" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/jdk.compiler/com/sun/tools/javac/comp/Resolve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="3339" column="10" selection-start-line="3339" selection-start-column="10" selection-end-line="3339" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/proxy/ProxyExecutable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="549" column="18" selection-start-line="549" selection-start-column="18" selection-end-line="549" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars/kotlin-stdlib-sources.jar!/kotlin/Array.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/utility/AsMapShim.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/utility/Dict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fielded/live/Asta.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/VMAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/impl/Accessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/GraalTVMCI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://C:/Users/marc/field2/jdk/win/jdk-10!/jdk.internal.vm.ci/jdk/vm/ci/code/InstalledCode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/hotspot/HotSpotOptimizedCallTarget.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/OptimizedCompilationProfile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/GraalCompilerDirectives.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/nodes/RootNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/api/CompilerDirectives.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/OptimizedCallTarget.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/org/graalvm/polyglot/Value.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/utility/IdempotencyMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+          <folding>
+            <element signature="e#3098#3099#0" expanded="true" />
+            <element signature="e#3121#3122#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4237#4238#0" expanded="true" />
+            <element signature="e#4282#4283#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+            <element signature="e#4493#4494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="371" selection-start-line="371" selection-end-line="371" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/graphics/FLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45000">
+          <caret line="2622" column="32" selection-start-line="2622" selection-start-column="32" selection-end-line="2622" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ar/three.js/field/runners.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/graphics/Shader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8244">
+          <caret line="498" selection-start-line="498" selection-end-line="498" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/graphics/ShaderIntrospection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/graphics/BaseScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/graphics/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="e#19340#19341#0" expanded="true" />
+            <element signature="e#19386#19387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/field/utility/GetMemberHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars/kotlin-stdlib-sources.jar!/common/kotlin/util/Tuples.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jdk/win/jdk-10/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7488">
+          <caret line="458" selection-start-line="458" selection-end-line="458" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fielded/Animatable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/HostRootNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotValue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35946">
+          <caret line="2444" selection-start-line="2444" selection-end-line="2444" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ToHostNodeGen.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ToHostNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotContextImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4086">
+          <caret line="272" selection-start-line="272" selection-end-line="272" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/ContextThreadLocal.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/com/oracle/truffle/polyglot/PolyglotLanguage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4446">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/OptimizedAssumption.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2196">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#4530#4531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/org/graalvm/compiler/truffle/runtime/FrameWithoutBoxing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#2324#2325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fieldbox/boxes/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="813" column="1" selection-start-line="813" selection-start-column="1" selection-end-line="880" selection-end-column="5" />
+          <folding>
+            <element signature="e#24891#24892#0" expanded="true" />
+            <element signature="e#24945#24946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>rt</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>field2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20344828" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>field_agent</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20344828" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -4,7 +4,9 @@ import field.utility.Dict;
 import fieldbox.boxes.Box;
 import fieldbox.execution.Execution;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -69,10 +71,11 @@ public class BoxDefaultCode {
 			URL is = Thread.currentThread().getContextClassLoader().getResource(n + (ex.length()>0 ? ("." + ex) : ""));
 			if (is != null) {
 				try {
-					return new String(Files.readAllBytes(Paths.get(is.toURI())));
+					// work around some jdk12 oddness with uris and paths
+					String path = is.toString();
+					path = path.replaceAll("file:", "");
+					return new String(Files.readAllBytes(new File(path).toPath()));
 				} catch (IOException e) {
-					e.printStackTrace();
-				} catch (URISyntaxException e) {
 					e.printStackTrace();
 				}
 

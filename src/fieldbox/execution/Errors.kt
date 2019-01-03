@@ -44,7 +44,7 @@ object Errors {
                 //			println(t.fileName + " || " + t.lineNumber + " || " + t.className + " || " + t.methodName + " ||    " + t)
                 if (t.fileName != null) {
                     val m = boxFinder.matcher(t.fileName)
-                    if (m.matches()) {
+                    if (m.find()) {
                         val uid = m.group(2)
                         val name = m.group(1)
                         reportError(root, uid, name, t, t.lineNumber, th, additionalMessage)

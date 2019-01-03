@@ -5,12 +5,14 @@ import fieldbox.execution.HandlesCompletion;
 import fieldnashorn.annotations.SafeToToString;
 import jdk.nashorn.api.scripting.ScriptObjectMirror;
 import jdk.nashorn.api.scripting.ScriptUtils;
+import org.graalvm.polyglot.Value;
+import org.graalvm.polyglot.proxy.ProxyObject;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class IdempotencyMap<T> extends LinkedHashMapAndArrayList<T> implements Mutable<IdempotencyMap<T>>, fieldlinker.AsMap, HandlesCompletion {
+public class IdempotencyMap<T> extends LinkedHashMapAndArrayList<T> implements Mutable<IdempotencyMap<T>>, fieldlinker.AsMap, HandlesCompletion, ProxyObject {
 
 	private final Class<? extends T> t;
 	private Function<String, T> autoConstructor;
@@ -171,6 +173,33 @@ public class IdempotencyMap<T> extends LinkedHashMapAndArrayList<T> implements M
 		if (value.getClass().getAnnotation(SafeToToString.class) != null) return " = " + value;
 		return "of class " + value.getClass().getName();
 	}
+
+	@Override
+	public Object getMember(String key) {
+		return asMap_get(key);
+	}
+
+	@Override
+	public Object getMemberKeys() {
+		return keySet();
+	}
+
+	@Override
+	public boolean hasMember(String key) {
+		return containsKey(key);
+	}
+
+	@Override
+	public void putMember(String key, Value value) {
+		asMap_set(key, value.as(t));
+	}
+
+	@Override
+	public boolean removeMember(String key) {
+		return remove(key)!=null;
+	}
+
+
 
 	private class AllOf implements fieldlinker.AsMap {
 

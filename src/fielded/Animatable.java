@@ -52,7 +52,8 @@ public class Animatable {
 					e.end(stopping);
 					return false;
 				} else {
-					e.middle(stopping);
+					Object r = e.middle(stopping);
+					if (r instanceof Boolean && !((Boolean)r).booleanValue()) return false;
 					return true;
 				}
 			} catch (Throwable t) {

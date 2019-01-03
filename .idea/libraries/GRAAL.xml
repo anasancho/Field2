@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="GRAAL">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/asm-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/asm-analysis-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/asm-commons-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/asm-tree-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/asm-util-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/chromeinspector-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/compiler-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/graal-sdk-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/icu4j-62.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/js-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/js-launcher-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/js-scriptengine-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/launcher-common-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/profiler-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/regex-1.0.0-rc9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/truffle-api-1.0.0-rc9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/jars_graal/js-launcher-1.0.0-rc9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

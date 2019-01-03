@@ -188,7 +188,7 @@ public class ShaderIntrospection {
 		Set<field.graphics.Uniform> up = new LinkedHashSet<>(ubp.getUniforms()
 									.values());
 
-		s.children().stream().filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
+//		s.children().stream().filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
 		s.internalScene.values().stream().flatMap(x -> x.stream()).filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
 
 		String e = checkUniforms("", up, up, convert);
@@ -339,7 +339,7 @@ public class ShaderIntrospection {
 		UniformBundle ubp = s.getDefaultBundle();
 		Set<field.graphics.Uniform> up = new LinkedHashSet<>(ubp.getUniforms()
 									.values());
-		s.children().stream().filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
+//		s.children().stream().filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
 		s.internalScene.values().stream().flatMap(x -> x.stream()).filter(x -> x instanceof field.graphics.Uniform).forEach(x -> up.add((field.graphics.Uniform)x));
 
 

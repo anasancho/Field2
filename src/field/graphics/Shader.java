@@ -1,13 +1,12 @@
 package field.graphics;
 
-import field.utility.Conversions;
-import field.utility.Dict;
-import field.utility.Log;
+import field.utility.*;
 import fieldbox.boxes.Box;
 import fieldbox.execution.HandlesCompletion;
 import fielded.boxbrowser.BoxBrowser;
 import fieldlinker.*;
 import fieldnashorn.annotations.HiddenInAutocomplete;
+import org.graalvm.polyglot.Value;
 import org.lwjgl.opengl.*;
 
 import java.lang.reflect.Field;
@@ -19,6 +18,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL30.GL_INTERLEAVED_ATTRIBS;
@@ -37,6 +37,8 @@ public class Shader extends BaseScene<Shader.State> implements Scene.Perform, fi
 
 	private ShaderIntrospection introspection;
 	private int modCount;
+
+
 
 	@Override
 	public String generateMarkdown(Box inside, Dict.Prop property) {
@@ -318,15 +320,6 @@ public class Shader extends BaseScene<Shader.State> implements Scene.Perform, fi
 	boolean linkAndValidateNow(int name) {
 		lastAccumulatedError = null;
 
-		TreeMap<Integer, Set<Consumer<Integer>>> c = collectChildrenPasses();
-		if (c != null)
-			c.values().stream().flatMap(x -> x.stream()).forEach(x -> {
-				if (x instanceof TransformFeedback) {
-					glTransformFeedbackVaryings(name, ((TransformFeedback) x).target, GL_INTERLEAVED_ATTRIBS);
-				}
-
-				// warning if there are more than one of these?
-			});
 
 		internalScene.values().stream().flatMap(x -> x.stream()).forEach(x -> {
 			if (x instanceof TransformFeedback) {
@@ -501,5 +494,7 @@ public class Shader extends BaseScene<Shader.State> implements Scene.Perform, fi
 	public int getModCount() {
 		return modCount;
 	}
+
+
 
 }

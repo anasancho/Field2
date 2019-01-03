@@ -12,6 +12,8 @@ import fieldnashorn.annotations.HiddenInAutocomplete;
 import jdk.nashorn.api.scripting.ScriptObjectMirror;
 import jdk.nashorn.api.scripting.ScriptUtils;
 import kotlin.jvm.functions.Function1;
+import org.graalvm.polyglot.Value;
+import org.graalvm.polyglot.proxy.ProxyObject;
 
 import java.awt.*;
 import java.awt.geom.AffineTransform;
@@ -54,14 +56,22 @@ import static fieldbox.boxes.Box.format;
  * underlying Buffers or whether this piece of geometry can be skipped, and finally individual ArrayBuffers can elect to skip the upload to OpenGL. This means that static geometry is extremely cheap
  * to draw.
  */
-public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesCompletion, Serializable_safe, OverloadedMath {
+public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesCompletion, Serializable_safe, OverloadedMath/*, ProxyObject*/ {
 
 	static {
 		new StandardFLineDrawing(); // cause properties to be loaded
 	}
 
+
 	public List<Node> nodes = new ArrayList<>();
 	public Dict attributes = new Dict();
+
+	public AsMapShim prop = new AsMapShim(this,
+										  k -> attributes.getMap().keySet().stream().map(x -> x.getName()).toArray(),
+										  p -> "properties for FLine ["+attributes.getMap()+"]"
+	);
+
+
 	transient protected Set<String> knownNonProperties;
 	long mod = 0;
 	WeakHashMap<MeshBuilder, BookmarkCache> cache = new WeakHashMap<>();
@@ -188,6 +198,10 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 		return add(new MoveTo(x, y, 0));
 	}
 
+	public FLine _moveTo(double x, double y) {
+		return add(new MoveTo(x, y, 0));
+	}
+
 	/**
 	 * moves the draw position to `position` without drawing anything on the way there.
 	 */
@@ -201,6 +215,7 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 	public FLine moveTo(Vec3 position) {
 		return add(new MoveTo(position.x, position.y, position.z));
 	}
+
 
 	/**
 	 * moves the draw position to a new place that is `dx, dy` away from where the line currently is without drawing anything on the way there.
@@ -218,6 +233,12 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 	 * draws a line from the current position to `x, y`
 	 */
 	public FLine lineTo(double x, double y) {
+		if (nodes.size() == 0) return moveTo(x, y);
+		return add(new LineTo(x, y, 0));
+	}
+
+
+	public FLine _lineTo(double x, double y) {
 		if (nodes.size() == 0) return moveTo(x, y);
 		return add(new LineTo(x, y, 0));
 	}
@@ -1541,6 +1562,8 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 
 		Dict.Prop canon = new Dict.Prop(m).findCanon();
 
+		if (canon==null) throw new NullPointerException(" can't find a property called `"+m+"` on this line");
+
 		Object ret = attributes.getOrConstruct(canon);
 
 
@@ -2101,6 +2124,9 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 		return left(-degrees);
 	}
 
+
+
+
 	public class State {
 		int index;
 		Vec3 heading = new Vec3(1, 0, 0);
@@ -2640,4 +2666,34 @@ public class FLine implements Supplier<FLine>, fieldlinker.AsMap, HandlesComplet
 		}
 		return ff;
 	}
+
+//	GetMemberHelper getMemberHelper = new GetMemberHelper(this);
+//
+//    @Override
+//    public Object getMember(String key) {
+//        if (getMemberHelper.has(key))
+//            return getMemberHelper.get(key);
+//        return asMap_get(key);
+//    }
+//
+//    @Override
+//    public Object getMemberKeys() {
+//        return attributes.getMap().keySet().stream().map(x -> x.getName()).toArray();
+//    }
+//
+//    @Override
+//    public boolean hasMember(String key) {
+//        return asMap_isProperty(key) || getMemberHelper.has(key);
+//    }
+//
+//    @Override
+//    public void putMember(String key, Value value) {
+//        asMap_set(key, value.as(Object.class));
+//    }
+//
+//    @Override
+//    public boolean removeMember(String key) {
+//        return asMap_delete(key);
+//    }
+
 }

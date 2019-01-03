@@ -4,11 +4,12 @@ import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import field.utility.*;
 import fieldbox.boxes.Box;
-import fieldbox.execution.Completion;
-import fieldbox.execution.Errors;
-import fieldbox.execution.InverseDebugMapping;
+import fieldbox.execution.*;
+import fieldbox.io.IO;
 import fieldlinker.Linker;
 import fieldnashorn.annotations.HiddenInAutocomplete;
+import org.graalvm.polyglot.Value;
+import org.graalvm.polyglot.proxy.ProxyObject;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
@@ -30,11 +31,18 @@ import java.util.stream.Collectors;
  * run in the right order with respect to that piece of Geometry. The topology of the tree is free to encoding a grouping thats useful to the application rather than something that's vital to
  * reexpressing the semantics of OpenGL's decaying state-machine just right.
  */
-public class Scene extends Box implements fieldlinker.AsMap {
+public class Scene /*extends Box*/ implements fieldlinker.AsMap, HandlesCompletion, ProxyObject {
+
 
 	public interface ContainsPerform {
 		Perform getPerform();
 	}
+
+//	public AsMapShim prop = new AsMapShim(this,
+//										  k -> Collections.emptyList(),
+//										  p -> "properties for "+this.getClass().getSimpleName()
+//	);
+
 
 	static public Dict.Prop<LinkedHashMapAndArrayList<Perform>> passes = new Dict.Prop<LinkedHashMapAndArrayList<Perform>>("passes").toCanon();
 	protected Set<String> knownNonProperties;
@@ -142,36 +150,35 @@ public class Scene extends Box implements fieldlinker.AsMap {
 		return m;
 	}
 
-	/**
-	 * connects a Box to this Scene. Boxes can contain Performs, this operation is equivalent to connecting all the Performs in this box.
-	 */
-	@Override
-	public Box connect(Box b) {
-		Box p = super.connect(b);
-		return p;
-	}
+//	/**
+//	 * connects a Box to this Scene. Boxes can contain Performs, this operation is equivalent to connecting all the Performs in this box.
+//	 */
+//	@Override
+//	public Box connect(Box b) {
+//		Box p = super.connect(b);
+//		return p;
+//	}
 
-	protected TreeMap<Integer, Set<Consumer<Integer>>> collectChildrenPasses() {
-
-
-		if (this.children()
-			.size() == 0) return null;
-
-		TreeMap<Integer, Set<Consumer<Integer>>> t = new TreeMap<>();
-
-		for (Box c : children()) {
-			LinkedHashMapAndArrayList<Perform> p = c.properties.get(passes);
-			if (p == null) continue;
-			for (Perform pp : p.values()) {
-				int[] ap = pp.getPasses();
-				for (int x : ap)
-					t.computeIfAbsent(x, k -> new LinkedHashSet<>())
-						.add(pp);
-			}
-		}
-
-		return t;
-	}
+//	protected TreeMap<Integer, Set<Consumer<Integer>>> collectChildrenPasses() {
+//
+//		if (this.children()
+//			.size() == 0) return null;
+//
+//		TreeMap<Integer, Set<Consumer<Integer>>> t = new TreeMap<>();
+//
+//		for (Box c : children()) {
+//			LinkedHashMapAndArrayList<Perform> p = c.properties.get(passes);
+//			if (p == null) continue;
+//			for (Perform pp : p.values()) {
+//				int[] ap = pp.getPasses();
+//				for (int x : ap)
+//					t.computeIfAbsent(x, k -> new LinkedHashSet<>())
+//						.add(pp);
+//			}
+//		}
+//
+//		return t;
+//	}
 
 
 	/**
@@ -197,8 +204,8 @@ public class Scene extends Box implements fieldlinker.AsMap {
 
 		try {
 
-			TreeMap<Integer, Set<Consumer<Integer>>> c1 = collectChildrenPasses();
-			if (c1 == null) c1 = new TreeMap<>();
+//			TreeMap<Integer, Set<Consumer<Integer>>> c1 = collectChildrenPasses();
+			TreeMap<Integer, Set<Consumer<Integer>>> c1 = new TreeMap<>();
 
 			for (Map.Entry<Integer, Set<Consumer<Integer>>> c2 : internalScene.entrySet()) {
 				if (c1.get(c2.getKey()) == null) c1.put(c2.getKey(), c2.getValue());
@@ -381,7 +388,7 @@ public class Scene extends Box implements fieldlinker.AsMap {
 	@HiddenInAutocomplete
 	public Object asMap_get(String p) {
 		Consumer<Integer> t = tagged.get(p);
-		if (t == null) return super.asMap_get(p);
+//		if (t == null) return super.asMap_get(p);
 		return t;
 	}
 
@@ -406,7 +413,6 @@ public class Scene extends Box implements fieldlinker.AsMap {
 		return defaultBundle;
 	}
 
-	@Override
 	@HiddenInAutocomplete
 	public List<Completion> getCompletionsFor(String prefix) {
 
@@ -418,9 +424,9 @@ public class Scene extends Box implements fieldlinker.AsMap {
 		for (Completion c : u)
 			c.rank = -100;
 
-		List<Completion> c = super.getCompletionsFor(prefix);
+//		List<Completion> c = super.getCompletionsFor(prefix);
+//		u.addAll(c);
 
-		u.addAll(c);
 		return u;
 	}
 
@@ -454,7 +460,9 @@ public class Scene extends Box implements fieldlinker.AsMap {
 		o = Conversions.convert(o, Perform.class);
 		if (o instanceof Perform) {
 			return attach(p, (Perform) o);
-		} else return super.asMap_set(p, o);
+		}
+//		else return super.asMap_set(p, o);
+		else return null;
 	}
 
 	@Override
@@ -477,7 +485,8 @@ public class Scene extends Box implements fieldlinker.AsMap {
 	@Override
 	public Object asMap_getElement(Object element) {
 		if (element instanceof Number) return new PassShim(((Number) element).intValue());
-		else return super.asMap_getElement(element);
+//		else return super.asMap_getElement(element);
+		else return null;
 	}
 
 	@Override
@@ -581,6 +590,75 @@ public class Scene extends Box implements fieldlinker.AsMap {
 
 	}
 
+	static public class Subscope implements fieldlinker.AsMap {
+		protected String prefix;
+		protected fieldlinker.AsMap delegateTo;
+
+		public Subscope(fieldlinker.AsMap from) {
+
+			this.prefix = Execution.context.get()
+					.peek().properties.getOrConstruct(IO.id);
+			this.delegateTo = from;
+		}
+
+		public Subscope(Box prefixFrom, Box from) {
+			this.prefix = prefixFrom.properties.getOrConstruct(IO.id);
+			this.delegateTo = from;
+		}
+
+		public Subscope(String prefixFrom, Box from) {
+			this.prefix = prefixFrom;
+			this.delegateTo = from;
+		}
+
+
+		@Override
+		public boolean asMap_isProperty(String p) {
+			return delegateTo.asMap_isProperty(prefix + p);
+		}
+
+		@Override
+		public Object asMap_call(Object a, Object b) {
+			return delegateTo.asMap_call(a, b);
+		}
+
+		@Override
+		public Object asMap_get(String p) {
+			return delegateTo.asMap_get(prefix + p);
+		}
+
+
+		@Override
+		public boolean asMap_delete(Object o) {
+			return delegateTo.asMap_delete(prefix + o);
+		}
+
+		@Override
+		public Object asMap_set(String p, Object o) {
+			return delegateTo.asMap_set(prefix + p, o);
+		}
+
+		@Override
+		public Object asMap_new(Object a) {
+			return delegateTo.asMap_new(a);
+		}
+
+		@Override
+		public Object asMap_new(Object a, Object b) {
+			return delegateTo.asMap_new(a, b);
+		}
+
+		@Override
+		public Object asMap_getElement(int element) {
+			throw new Error();
+		}
+
+		@Override
+		public Object asMap_setElement(int element, Object o) {
+			throw new Error();
+		}
+	}
+
 	public class PassShim implements fieldlinker.AsMap {
 		int pass;
 
@@ -617,7 +695,9 @@ public class Scene extends Box implements fieldlinker.AsMap {
 			o = Conversions.convert(o, Perform.class);
 			if (o instanceof Perform) {
 				return attach(pass, "__" + pass + "__" + p, (Perform) o);
-			} else return Scene.super.asMap_set(p, o);
+			}
+			else return null;
+//			else return Scene.super.asMap_set(p, o);
 		}
 
 		@Override
@@ -673,6 +753,43 @@ public class Scene extends Box implements fieldlinker.AsMap {
 		public String toString() {
 			return "<i>shift" + shift + "</i>:" + child;
 		}
+	}
+
+	@Override
+	public boolean asMap_delete(Object o) {
+		return false;
+	}
+
+
+	GetMemberHelper getMemberHelper = new GetMemberHelper(this);
+
+	@Override
+	public Object getMember(String key) {
+		if (getMemberHelper.has(key))
+			return getMemberHelper.get(key);
+		return asMap_get(key);
+	}
+
+	@Override
+	public Object getMemberKeys() {
+		Set<String> v = defaultBundle.uniforms.keySet().stream().map(x -> x.getName()).collect(Collectors.toSet());
+		v.addAll(tagged.keySet());
+		return v;
+	}
+
+	@Override
+	public boolean hasMember(String key) {
+		return asMap_isProperty(key) || getMemberHelper.has(key);
+	}
+
+	@Override
+	public void putMember(String key, Value value) {
+		asMap_set(key, value.as(Object.class));
+	}
+
+	@Override
+	public boolean removeMember(String key) {
+		return asMap_delete(key);
 	}
 
 }

@@ -1,0 +1,48 @@
+#!/bin/bash
+pushd $(dirname `which "$0"`) >/dev/null; fieldhome="$PWD"; popd >/dev/null
+
+JDK=$fieldhome/jdk/win/jdk-12/bin/
+
+out=$fieldhome/build/classes
+out=${out/\/mnt\/c\//c:\//}
+echo $out
+
+fieldhome=${fieldhome/\/mnt\/c\//c:\//}
+#JDK="/mnt/c/Program Files/Java/jdk-9.0.1/bin/"
+java="$JDK"/java.exe
+
+echo $fieldhome
+
+"$java" \
+    -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI --module-path=c:/Users/marc/temp/graal-js-jdk11-maven-demo/hack/ --upgrade-module-path=c:/Users/marc/temp/graal-js-jdk11-maven-demo/hack/compiler-1.0.0-rc9.jar \
+    -Dgraal.TraceTruffleCompilation=true \
+    -Xrunjdwp:server=y,transport=dt_socket,address=5005,suspend=n -Dorg.lwjgl.util.Debug=true \
+    -DappDir=$fieldhome \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.services=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.runtime=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.hotspot=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.code=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.code.stack=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.common=ALL-UNNAMED \
+    --add-exports jdk.internal.vm.ci/jdk.vm.ci.meta=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.services=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.runtime=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.hotspot=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.code=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.code.stack=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.code.site=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.common=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.meta=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.sparc=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.amd64=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.aarch64=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.hotspot.amd64=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.hotspot.sparc=ALL-UNNAMED \
+    --add-opens jdk.internal.vm.ci/jdk.vm.ci.hotspot.aarch64=ALL-UNNAMED \
+    -Xmx5g \
+    -Xms2g \
+    -javaagent:$fieldhome/build/field_agent.jar \
+    -cp "$out;$fieldhome/build/field_linker.jar;$fieldhome/lib/;$fieldhome/lib/jars/*;$fieldhome/build/field_agent.jar;c:/Users/marc/temp/graal-js-jdk11-maven-demo/hack/SomethingOurs/out/production/SomethingOurs/;c:/Users/marc/AUW/out/production/AUW/" \
+    -Djava.library.path=$fieldhome/win/lib/ \
+    ${*}
+

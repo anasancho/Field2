@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="BUILD_PROCESS_HEAP_SIZE" value="1400" />
-    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="--add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED" />
-    <bytecodeTargetLevel target="9" />
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters --add-exports java.desktop/com.apple.eawt=ALL-UNNAMED" />
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/fieldbox/boxes/plugins/UndoStack.kt" />
+      <file url="file://$PROJECT_DIR$/src/field/graphics/vr/OpenVRDrawTarget.kt" />
+    </excludeFromCompile>
   </component>
 </project>

@@ -55,10 +55,10 @@ public class NashornExecution implements Execution.ExecutionSupport {
 
     static public final ThreadLocal<ScriptEngine> currentEngine = new ThreadLocal<>();
     static int uniq = 0;
+    final String prefix = "" + (uniq++);
     public final Dict.Prop<String> property;
     public final Box box;
     public final ScriptContext context;
-    final String prefix = "" + (uniq++);
     private final ScriptEngine engine;
     private final Out output;
     public String filename = null;
@@ -135,7 +135,7 @@ public class NashornExecution implements Execution.ExecutionSupport {
 										new Quad<>(currentLineNumber.first, currentLineNumber.second, finalS,
 											currentLineNumber.third)));
 								} else {
-//									success.accept(finalS);
+									success.accept(finalS);
 
                                     o.forEach(x -> x.accept(new Quad<>(box, -1, finalS, true)));
 

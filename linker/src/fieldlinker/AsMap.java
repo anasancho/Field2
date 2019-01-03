@@ -29,4 +29,5 @@ public interface AsMap extends CustomDelete {
 	default Object asMap_call(Object o) {
 		return asMap_call(o, Collections.EMPTY_MAP);
 	}
+
 }

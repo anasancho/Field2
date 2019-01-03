@@ -39,7 +39,7 @@ var __MULTIPLY__ = Asta.__MULTIPLY__;
 var __DIVIDE__ = Asta.__DIVIDE__;
 var __NUMBER_LITERAL__ = (start, end, def) => __h__.__LNC__(start, end, def);
 
-_.sourceTransformer = __h__.transformer(_)
+// _.sourceTransformer = __h__.transformer(_)
 
 var vec = function (x, y, z, w) {
     if (arguments.length == 0) return new Vec4(0, 0, 0, 1)
@@ -82,7 +82,6 @@ var translate = function (x, y) {
 
 translate.__doc__ = "shorthand for creating a transformation that translates. "
 
-
 var rotate3 = function (angle, axis) {
     if (arguments.length == 2) return T3D.rotate(angle, axis)
     throw "can't make a rotation given this (" + arguments.length + ") number of arguments"
@@ -119,6 +118,8 @@ var _ft = function() {
 }
 _ft.__doc__ = "for 'Box Pair' boxes, this gives you the value of `_t()` with respect to the footage box (the little one under the main box)"
 
+
+/* // commented out until Graal understands _.
 // this is a dreadful hack
 
 _.intersectX = function(x) {
@@ -171,3 +172,4 @@ __.noLimits = function() {
     Java.type("fieldnashorn.Watchdog").limits=false
 }
 __.noLimits.__doc__ = "_.noLimit() removes all resource limit checking from Field. This means that loops can take longer than 5 seconds to complete, `_.lines` (and other places where you can put geometry) can take more than 1000 elements"
+ */
